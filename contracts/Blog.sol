@@ -68,7 +68,7 @@ contract Blog {
         emit PostUpdated(post.id, title, hash, published);
     }
 
-    function fetchPost() public view returns (Post[] memory) {
+    function fetchPosts() public view returns (Post[] memory) {
         uint itemCount = _postIds.current();
 
         Post[] memory posts = new Post[](itemCount);
