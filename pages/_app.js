@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useState } from 'react'
 import Link from 'next/link'
 import { css } from '@emotion/css'
@@ -19,7 +20,7 @@ function MyApp({ Component, pageProps }) {
         walletconnect: {
           package: WalletConnectProvider,
           options: { 
-            infuraId: process.env.INFURA_ID
+            infuraId: "885b839092b74e61957e8f2fa8176f4b"
           },
         },
       },
